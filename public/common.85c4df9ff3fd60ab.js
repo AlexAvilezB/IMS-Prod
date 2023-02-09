@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkA3_IMS=self.webpackChunkA3_IMS||[]).push([[592],{880:(t,_,n)=>{n.d(_,{c:()=>a});var r=n(4650),o=n(7009);class a{constructor(c){this.snackBar=c}showSnack(c){this.snackBar.open(c,"Ok!",{duration:5e3})}}a.\u0275fac=function(c){return new(c||a)(r.LFG(o.ux))},a.\u0275prov=r.Yz7({token:a,factory:a.\u0275fac,providedIn:"root"})}}]);
