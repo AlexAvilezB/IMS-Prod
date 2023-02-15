@@ -51,16 +51,13 @@ const editUserData = async(req, res = response) => {
 
   const id = req.params.id;
 
-  const { username, lastname, password, birthday, position, roles, isActive } = req.body;
+  const { username, lastname, birthday, position, roles, isActive } = req.body;
 
   try {
-    const salt = bcrypt.genSaltSync();
-    hashPass = bcrypt.hashSync(password, salt);
 
     await User.findByIdAndUpdate(id, {
       username,
       lastname,
-      password: hashPass,
       birthday,
       position,
       roles,

@@ -23,10 +23,6 @@ router.put(
     check("username", "username is required").isLength({ min: 3 }),
     check("lastname", "lastname is required").isLength({ min: 3 }),
     check("email", "Email is required").isEmail(),
-    check("password", "Password is required").not().isEmpty(),
-    check("password", "Password must be at least 6 characters").isLength({
-      min: 6,
-    }),
     check("birthday", "birthday is required").not().isEmpty(),
     check("position", "position is required").isLength({ min: 3 }),
     check("roles", "roles is required").not().isEmpty(),
